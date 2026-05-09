@@ -1,0 +1,3 @@
+# Mengabaikan semua file model yang besar
+mlruns/**/artifacts/*.pkl
+mlruns/**/artifacts/*.joblib
