@@ -62,3 +62,8 @@ jobs:
           else
             echo "No changes to commit"
           fi
+
+      - id: 'auth'
+        uses: 'google-github-actions/auth@v2'
+        with:
+          credentials_json: '${{ secrets.GCP_SA_KEY }}' # Harus sama dengan nama di GitHub
